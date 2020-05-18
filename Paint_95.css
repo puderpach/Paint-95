@@ -1,0 +1,56 @@
+.main {
+    height: 1200px;
+    margin: 10px;
+    background-image: url(Images/win95.jpg);
+    background-repeat: no-repeat;
+    background-size: center;
+}
+
+.toolbar {
+    width: 120px;
+    height: 400px;
+    background-color: #D6D1CC;
+    border: 3px solid grey;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 100px;
+}
+
+.header {
+    width: 100%;
+    height: 30px;
+    background-color: #6083B5;
+    border-bottom: 3px solid grey;
+    color: black;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.paint-canvas {
+    width: 700px;
+    height: 500px;
+    background-color: white;
+    border: 3px solid grey;
+    position: absolute;
+    margin-left: 270px;
+    margin-top: 100px;
+}
+
+.tools {
+    width: 100%;
+    height: 200px;
+}
+
+.tools-color {
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.toolbar-box {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+}
