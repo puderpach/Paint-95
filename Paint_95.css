@@ -27,7 +27,7 @@
     padding-left: 5px;
 }
 
-.paint-canvas {
+#paint-canvas {
     width: 700px;
     height: 500px;
     background-color: white;
