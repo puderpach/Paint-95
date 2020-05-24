@@ -1,29 +1,19 @@
-// window.onload = function init() {
-//     drawField = document.getElementById('myCanvas');
+let paintCanvas = document.getElementById("paint-canvas");
+let timer
 
-//     canvas.addEventListener('mousemove', function (evt) {
-//         mousePos = getMousePos(canvas, evt);
-//         var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
-//         writeMessage(canvas, message);
-//     }, false);
+function drawing() {
+    document.addEventListener("mousemove", createDiv);
+    setInterval(createDiv(), 1);
+}
 
-//     canvas.addEventListener('mousedown', function (evt) {
-//         mouseButton = evt.button;
-//         var message = "Mouse down button " + evt.button + " down at position: " + mousePos.x + ',' + mousePos.y;
-//         writeMessage(canvas, message);
-//     }, false);
+function stopDrawing() {
+    document.removeEventListener("mousemove", createDiv);
+}
 
-//     canvas.addEventListener('mouseup', function (evt) {
-//         var message = "Mouse up at position: " + mousePos.x + ',' + mousePos.y;
-//         writeMessage(canvas, message);
-//     }, false);
-// };
-
-function drawing(event) {
+function createDiv() {
     let paintCanvas = document.getElementById("paint-canvas");
     let x = event.offsetX;
     let y = event.offsetY;
-    console.log("x = " + x + " y = " + y);
     let div = document.createElement("div");
     paintCanvas.appendChild(div);
     div.style.backgroundColor = "black";
