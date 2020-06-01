@@ -15,14 +15,16 @@
             </div>
             <div class=tools>
                 <div class=toolbar-row>
-                    <button class=menu-point></button>
+                    <button class=menu-point id="tool-paint" onclick=paint()></button>
                     <button class=menu-point></button>
                 </div>
                 <div class=toolbar-row>
-                    <button class=menu-point id=tool-erase></button>
+                    <button class=menu-point id=tool-erase onclick=erase()></button>
                     <button class=menu-point></button>
                 </div>
-
+            </div>
+            <div class=current-color>
+                <div id=current-color-box></div>
             </div>
             <div class=tools-colors>
                 <div class=toolbar-row>
@@ -37,7 +39,7 @@
                 </div>
             </div>
         </div>
-        <div id=paint-canvas onmousedown="drawing()" onmouseup="stopDrawing()">
+        <div id=paint-canvas>
         </div>
     </div>
 </body>
