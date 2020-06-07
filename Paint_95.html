@@ -15,11 +15,11 @@
             </div>
             <div class=tools>
                 <div class=toolbar-row>
-                    <button class=menu-point id="tool-paint" onclick=paint()></button>
+                    <button class=menu-point id="tool-paint" value="black" onclick=changeColor(this.value)></button>
                     <button class=menu-point></button>
                 </div>
                 <div class=toolbar-row>
-                    <button class=menu-point id=tool-erase onclick=erase()></button>
+                    <button class=menu-point id=tool-erase value="white" onclick=changeColor(this.value)></button>
                     <button class=menu-point></button>
                 </div>
             </div>
