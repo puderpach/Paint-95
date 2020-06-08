@@ -15,28 +15,36 @@
             </div>
             <div class=tools>
                 <div class=toolbar-row>
-                    <button class=menu-point id="tool-paint" value="black" onclick=changeColor(this.value)></button>
+                    <button class=menu-point id="tool-paint" onclick="changeColor('black'), changeSize('3px')"></button>
                     <button class=menu-point></button>
                 </div>
                 <div class=toolbar-row>
-                    <button class=menu-point id=tool-erase value="white" onclick=changeColor(this.value)></button>
+                    <button class=menu-point id=tool-erase onclick="changeColor('white'), changeSize('15px')"></button>
                     <button class=menu-point></button>
                 </div>
+            </div>
+            <div id=size-form>
+                <label for="pencil-size">Size:</label><br>
+                <input type="number" id="pencil-size" name="pencil-size" min="1" max="25" value="3">
+                <button id=size-button onclick="changeSizeButton()">Change</button>
             </div>
             <div class=current-color>
                 <div id=current-color-box></div>
             </div>
             <div class=tools-colors>
                 <div class=toolbar-row>
-                    <button class=menu-point id=color-black value="black" onclick=changeColor(this.value)></button>
-                    <button class=menu-point id=color-red value="red" onclick=changeColor(this.value)></button>
-                    <button class=menu-point id=color-green value="green" onclick=changeColor(this.value)></button>
+                    <button class=menu-point id=color-black onclick="changeColor('black')"></button>
+                    <button class=menu-point id=color-red onclick="changeColor('red')"></button>
+                    <button class=menu-point id=color-green onclick="changeColor('green')"></button>
                 </div>
                 <div class=toolbar-row>
-                    <button class=menu-point id=color-blue value="blue" onclick=changeColor(this.value)></button>
-                    <button class=menu-point id=color-yellow value="yellow" onclick=changeColor(this.value)></button>
-                    <button class=menu-point id=color-grey value="grey" onclick=changeColor(this.value)></button>
+                    <button class=menu-point id=color-blue onclick="changeColor('blue')"></button>
+                    <button class=menu-point id=color-yellow onclick="changeColor('yellow')"></button>
+                    <button class=menu-point id=color-grey onclick="changeColor('grey')"></button>
                 </div>
+            </div>
+            <div id=color-picker>
+                <input type="color" id="favcolor" name="favcolor" value="#ff0000" onclick=changeColor(this.value)>
             </div>
         </div>
         <div id=paint-canvas>

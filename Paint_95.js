@@ -3,8 +3,8 @@ let timer
 let color = "black";
 let size = "3px";
 let isDrawing = false;
-document.addEventListener("mousedown", e => {isDrawing = true});
-document.addEventListener("mouseup", e => {isDrawing = false});
+document.addEventListener("mousedown", e => { isDrawing = true });
+document.addEventListener("mouseup", e => { isDrawing = false });
 document.addEventListener("mousemove", paint);
 
 function paint() {
@@ -36,3 +36,9 @@ function changeColor(newColor) {
 function changeSize(newSize) {
     size = newSize;
 }
+
+function changeSizeButton() {
+    let buttonSize = document.getElementById("pencil-size").valueAsNumber;
+    changeSize(buttonSize + "px");
+}
+
