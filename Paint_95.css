@@ -29,7 +29,7 @@
 
 #paint-canvas {
     width: 700px;
-    height: 500px;
+    height: 511px;
     background-color: white;
     border: 3px solid grey;
     position: absolute;
@@ -40,7 +40,7 @@
 
 .tools {
     width: 100%;
-    height: 125px;
+    height: 120px;
     display: flex;
     flex-direction: row;
     padding-top: 8px;
@@ -81,6 +81,20 @@
 #tool-paint {
     background-image: url(images/Pen.jpg);
     background-size: contain;
+}
+
+#tool-square {
+    background-image: url(images/Square2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 33px 33px;
+}
+
+#tool-circle {
+    background-image: url(images/Circle.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
 }
 
 #size-form {
@@ -144,4 +158,10 @@
     border-right: 3px solid rgb(99, 99, 99);
     border-bottom: 3px solid rgb(99, 99, 99);
     background-color: #D6D1CC;
+}
+
+.button-field {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
 }
