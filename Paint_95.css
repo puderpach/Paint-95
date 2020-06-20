@@ -151,6 +151,18 @@
     padding-right: 9px;
 }
 
+#save-input {
+    width: 95px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+#save-input-field {
+    width: 95px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
 #favcolor {
     width: 90px;
     border-top: 3px solid white;
